@@ -1,0 +1,548 @@
+@font-face { font-family: "myriadpro"; src: url(../fonts/myriad-pro/MyriadPro.ttf); }
+@font-face { font-family: "droidsans"; src: url(../fonts/droid-sans/DroidSans.ttf); }
+@font-face { font-family: "chunkfive"; src: url(../fonts/chunk-five/Chunk.ttf); }
+
+.header { 
+    background: #fff; 
+    width: 100%; 
+    padding: 18px 0; 
+    border-bottom: 1px solid #d3d0c5; 
+}
+.header #header-logo a { 
+    display: block; 
+    cursor: pointer; 
+    background: url(../images/logoheader.png) no-repeat; 
+    background-size: contain; 
+    height: 73px; 
+}
+.header .header-phone { 
+    color: #242424; 
+    font: 22px "chunkfive"; 
+    padding-left: 20px; 
+    position: relative; 
+    background: url(../images/phoneicon.png) no-repeat left; 
+    background-size: contain; 
+    -webkit-transition: all .2s ease-in;
+    -moz-transition: all .2s ease-in;
+    -ms-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    transition: all .2s ease-in; 
+}
+.header .header-phone:hover { 
+    color: #ff8a00; 
+    text-decoration: none; 
+}  
+.header .header-menu { text-align: right; }
+.header .header-menu > ul { 
+    list-style: none; 
+    margin: 0; 
+    padding: 0; 
+    position: relative; 
+}
+.header ul li { 
+    display: inline-block; 
+    margin-left: 25px; 
+    padding: 15px 0; 
+    position: relative; 
+}
+.header ul.dropdown-menu li {
+    border-bottom: 1px solid #f2f1ee;
+    text-align: center;
+}
+
+.header-menu ul li a { 
+    color: #000000; 
+    font: 17px "droidsans"; 
+}
+
+.dropdown ul li a {
+    font: 10.6px bold "droidsans";
+}
+#oven::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    left: -5%;
+    width: 23px;
+    height: 20px;
+    background: url(../images/oven.png) no-repeat;
+    background-size: contain;
+}
+#carpet::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    left: -5%;
+    width: 23px;
+    height: 20px;
+    background: url(../images/carpet.png) no-repeat;
+    background-size: contain;
+}
+#sofa::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    left: -5%;
+    top: 41%;
+    width: 23px;
+    height: 20px;
+    background: url(../images/sofa.png) no-repeat;
+    background-size: contain;
+}
+.dropdown-menu {
+    min-width: 185px;
+    left: -130%;
+    border: 2px solid rgba(166,166,166,1);
+    padding-bottom: 50px;
+}
+.dropdown-menu::before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    left: 100px;
+    bottom: 93px;
+    width: 25px;
+    height: 145px;
+    background: url(../images/triangle.jpg) no-repeat;
+    background-size: contain;
+}
+
+.header ul #prices::after { 
+    content:''; 
+    display: inline-block; 
+    position: absolute; 
+    left: 48px; 
+    bottom: 30px; 
+    width: 10px; 
+    height: 10px; 
+    background: url(../images/icon.png) no-repeat; 
+    background-size: contain; 
+}
+.header .header-menu ul #home a { color: #ff8a00; }
+.header .header-menu ul li a:hover { 
+    color: #ff8a00; 
+    text-decoration: none; 
+    -webkit-transition: all .2s ease-in;
+    -moz-transition: all .2s ease-in;
+    -ms-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    transition: all .2s ease-in; 
+}  
+
+
+
+.header-banner #header-banner-content { padding-left: 0px; }
+.header-banner { 
+    width: 100%; 
+    background: #efefef url(../images/bg1.png) no-repeat center; 
+}
+.header-banner .container { 
+    background: url(../images/bg2.png) no-repeat bottom; 
+    background-position-x: 455px; 
+}
+.header-banner .header-banner-text { margin-top: 50px; }
+.header-banner .header-banner-spans { 
+    font: 24px "chunkfive"; 
+    color: #fff; 
+} 
+.header-banner .header-banner-spans span { padding: 5px 10px 5px 10px; 
+    background: #2e2d2d; 
+    display: inline-block; 
+}
+.header-banner #second { padding-top: 10px; }
+.header-banner .logos { margin: 30px 0px 40px 0px; } 
+.header-banner .logos #agency { 
+    display: inline-block; 
+    width: 119px; 
+    height: 33px; 
+    margin-right: 20px; 
+}
+.header-banner .logos #eco { 
+    display: inline-block; 
+    width: 104px; 
+    height: 31px; 
+}
+.header-banner .quote { margin-bottom: 50px; }
+.header-banner .quote a { 
+    display: inline-block; 
+    text-decoration: none; 
+    border: 1px solid transparent;
+    background: #ff8a00; 
+    color: #fff; 
+    cursor: pointer; 
+    font: 14.5px "droidsans"; 
+    padding: 7px 10px; 
+    box-shadow: 2.007px 2.229px 2px 0 rgba(0,0,0,.35);
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -ms-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    transition: all .3s ease-out; 
+}
+.header-banner .quote a span { font: bold 18.5px "droidsans"; }
+.header-banner .quote a:hover { 
+    display: inline-block; 
+    text-decoration: none; 
+    box-shadow: none; 
+    background: none; 
+    color: #ff8a00; 
+    border-color: #ff8a00; 
+}
+
+
+
+.section1 { margin-top: 50px; }
+.section1 h1 { 
+    font: 24px "chunkfive"; 
+    color: #000; 
+    margin: 0px 0px 30px 0px; 
+}
+.section1 p { font: 17px "droidsans"; 
+    color: #000; 
+    line-height: 1.2; 
+    margin: 0px; 
+    display: inline-block; 
+    text-align: justify; 
+}
+.section1 ul {
+    margin: 30px 0px 30px 77.5px; 
+    padding: 0px; 
+    list-style-image: url(../images/icon2.png); 
+}
+.section1 ul li { 
+    font: 17px "droidsans"; 
+    color: #000; 
+    padding: 0px 5px 14px 0px;
+}
+
+
+
+.section2 { margin-top: 30px; }
+.section2 img { 
+    display: block; 
+    width: 299px; 
+    height: 403px; 
+}
+.section2 #go-img { padding-left: 0px; }
+.section2 h1 { 
+    font: 24px "chunkfive"; 
+    color: #000; 
+    margin: 0px 0px 30px 0px; 
+}
+.section2 p { 
+    font: 17px "droidsans"; 
+    color: #000; 
+    margin: 0px; 
+    text-align: justify; 
+    line-height: 1.2; 
+}
+.section2 #text { padding: 50px 0px 0px 10px; }
+
+
+
+.section3 { 
+    margin-top: 30px;
+    background-color: #e5e5e5; 
+}
+.section3 #section3-content {
+    margin-top: 50px; 
+    margin-bottom: 50px; 
+}
+.section3 img { 
+    display: inline-block !important; 
+    width: 18px !important; 
+    height: 16px; 
+    margin-bottom: 20px; 
+}
+.section3 .rating img { margin: 15px 0px 10px 0px; }
+.section3 p { 
+    text-align: justify;
+    font: 17px "droidsans"; 
+    color: #000; 
+    margin: 0px; 
+}
+.owl-nav .prev {
+    left: 0;
+    width: 15px;
+    height: 45px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    bottom: auto;
+    left: auto;
+    right: auto;
+    transform: translateY(-50%);
+}
+.owl-nav .next {
+    width: 15px;
+    height: 45px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    bottom: auto;
+    left: auto;
+    right: auto;
+    transform: translateY(-50%);
+    right: 10px;
+}
+
+.owl-nav .prev:before {
+    content: '';
+    background: #969696;
+    display: block;
+    width: 2px;
+    height: 24px;
+    position: absolute;
+    transform: rotate(28deg);
+    top: 0;
+    left: 5px;
+}
+.owl-nav .prev:after {
+    content: '';
+    background: #969696;
+    display: block;
+    width: 2px;
+    height: 24px;
+    position: absolute;
+    transform: rotate(-28deg);
+    top: 21px;
+    left: 5px;
+}
+.owl-nav .next:before {
+    content: '';
+    background: #969696;
+    display: block;
+    width: 2px;
+    height: 24px;
+    position: absolute;
+    transform: rotate(-28deg);
+    top: 0;
+    left: 5px;
+}
+.owl-nav .next:after {
+    content: '';
+    background: #969696;
+    display: block;
+    width: 2px;
+    height: 24px;
+    position: absolute;
+    transform: rotate(28deg);
+    top: 21px;
+    left: 5px;
+}
+
+
+.section4 { margin-top: 40px; }
+.section4 h1 { 
+    font: 24px "chunkfive"; 
+    color: #000; 
+    margin: 0px 0px 30px 0px; 
+    display: inline-block; 
+    width: 50%; 
+}
+.section4 p { 
+    text-align: justify;
+    font: 17px "droidsans"; 
+    color: #000;
+    margin: 0px; 
+}
+.section4 .section4-title {
+    font: 24px "chunkfive";
+    color: #ff8a00; 
+    margin: 50px 0px 50px 0px; 
+    position: relative; 
+    padding-left: 48px; 
+}
+.section4 .section4-title:hover { 
+    color: #000;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -ms-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    transition: all .3s ease-out; 
+}
+.section4 .section4-title::before { 
+    content: ''; 
+    display: inline-block; 
+    background: url(../images/blackhand.png) no-repeat; 
+    background-size: contain; 
+    width: 28px; 
+    height: 34px; 
+    position: absolute; 
+    left: 0px; 
+    top: -7px; 
+}
+
+
+.section5 { 
+    margin-top: 80px; 
+    background-color: #e5e5e5; 
+}
+.section5 #section5-content { 
+    margin: 50px 0px 50px 0px; 
+    padding: 0px; 
+}
+.section5 h1 { 
+    font: 24px "chunkfive"; 
+    color: #000; 
+    margin-bottom: 20px; 
+    margin-top: 0px; 
+}
+.section5 h1::before {
+    content:''; 
+    display: inline-block;
+    margin-right: 18px; 
+    width: 30px; 
+    height: 30px; 
+    background: url(../images/hand.png) no-repeat; 
+    background-size: contain;
+    margin-left: -65px;
+    position: absolute;
+}
+.section5-p1::before {
+    content:''; 
+    display: inline-block;
+    margin-right: 18px; 
+    width: 30px; 
+    height: 30px; 
+    background: url(../images/phone.png) no-repeat; 
+    background-size: contain; 
+    margin-left: -65px;
+    position: absolute;
+}
+.section5-p2::before {
+    content:''; 
+    display: inline-block;
+    margin-right: 18px; 
+    width: 30px; 
+    height: 30px; 
+    background: url(../images/hand2.png) no-repeat; 
+    background-size: contain; 
+    margin-left: -65px;
+    position: absolute;
+}
+.section5-p3::before {
+    content:''; 
+    display: inline-block;
+    margin-right: 18px; 
+    width: 30px; 
+    height: 30px; 
+    background: url(../images/icon4.png) no-repeat; 
+    background-size: contain; 
+    margin-left: -65px;
+    position: absolute;
+}
+.section5-p4::before {
+    content:''; 
+    display: inline-block;
+    margin-right: 18px; 
+    width: 30px; 
+    height: 30px; 
+    background: url(../images/icon5.png) no-repeat; 
+    background-size: contain; 
+    margin-left: -65px;
+    position: absolute;
+}
+
+.section5 #left, .section5 #right { padding-left: 0px; text-align: justify;}
+.section5 p { 
+    font: 14px "droidsans"; 
+    color: #000; 
+}
+
+.footer-logo a { display: inline-block; }
+.footer-phone { 
+    float:right;
+    color: #242424; 
+    font: 20px "chunkfive"; 
+    padding-left: 20px;
+    margin-top: 12px;
+    margin-right: 40px; 
+    position: relative; 
+    background: url(../images/phoneicon.png) no-repeat left; 
+    background-size: contain; 
+    -webkit-transition: all .2s ease-in;
+    -moz-transition: all .2s ease-in;
+    -ms-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    transition: all .2s ease-in; 
+}
+.footer-phone:hover { 
+    color: #ff8a00; 
+    text-decoration: none; 
+}
+.footer-request {
+    float: right;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid transparent;
+    background: #ff8a00;
+    color: #fff;
+    cursor: pointer;
+    font: 14.5px "droidsans";
+    padding: 11px 20px;
+    box-shadow: 2.007px 2.229px 2px 0 rgba(0,0,0,.35);
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -ms-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+}
+.footer-request:hover {
+    display: inline-block;
+    text-decoration: none;
+    box-shadow: none;
+    background: none;
+    color: #ff8a00;
+    border-color: #ff8a00;
+}
+.footer-request span {
+    font: bold 14.5px "droidsans";
+}
+#topfooter {
+    padding: 15px 0px;
+}
+.footer-menu-div {
+    padding-right: 0px;
+}
+.footer-menu {
+    float: right;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+.footer-menu li {
+    display: inline-block;
+    margin-left: 25px;
+    padding: 15px 0;
+    position: relative;
+}
+.footer-menu a {
+    color: #000000;
+    font: 12px "droidsans" bold;
+}
+a:hover, a:visited, a:link, a:active {
+    text-decoration: none;
+} 
+.bottomfooter {
+    border-top: 1px solid #c1c1c1;
+}
+.bottomfooter-cr {
+    padding-left: 0px;
+}
+.bottomfooter p {
+    padding: 15px 0;
+    font-family: Arial;
+    font-size: 12px;
+}
+@media (min-width: 768px) {
+    .container {
+        width: 740px;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        width: 960px;
+    }
+}
